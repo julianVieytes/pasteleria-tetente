@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+html{
+    font-size: 62.5%;
+}
+/* fonts
+familia tipográfica: 'Josefin Sans', sans-serif;
+familia tipográfica: 'Josefin Slab', serif;
+familia tipográfica: 'Montserrat Alternates', sans-serif; */
+
+/* grids de pag. Inicio */
+.paginaInicio{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "section section section section"
+    "article article aside aside"
+    "footer footer footer footer";
+}
+.header{
+    grid-area: header;
+    background-color:#02e6b117;
+}
+.section{
+    grid-area: section;
+    background-image: url(../assets/inicio.jpg);
+    background-size: cover;
+}
+.article{
+    grid-area: article;
+    background-color:#02e6b117;
+}
+.aside{
+    grid-area: aside;
+    background-color:#02e6b117;
+}
+.footer{
+    grid-area: footer;
+    background-color: #240601;
+}
+
+/*css del header*/
+.divHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navBar{
+    display: flex;
+    flex-direction: row;        
+}
+.navBar li{
+    margin: 2.5rem;
+    width: 100%;      
+}
+a{
+    text-decoration: none;
+    color:#240601;
+    font-family:'Montserrat Alternates', sans-serif;
+    font-weight:bold;
+    font-size:2rem;
+    text-shadow: 1px 1px 1px #2406018e;
+    
+}
+a:hover{
+    color: #02e6b1;
+}
+
+/*ccs de section*/
+.section{
+    width: 100%;
+}
+.ImgInicio{
+    margin: 7.5%;
+    font-family:'Josefin Sans', sans-serif ;
+    font-size:7.5rem;
+    font-weight: 200;
+    text-align: center;
+    color: #02e6b1;
+    text-shadow: 5px 5px 10px #2406018e;
+}
+
+/* css de article */
+.article{
+    padding:10% 10%;
+    font-family:'Josefin Slab', serif;
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+    color:#240601;
+    text-shadow: 0.1rem 0.1rem 0.1rem #fc5d0d;
+}
+p{
+    margin:2rem;
+}
+.aside{
+    text-align: center;
+    padding: 10% 20%;
+}
+.aside img{
+    border-radius: 15%;
+}
+
+/*ccs del footer*/
+.footer{
+    background-color: #02e6b1;
+    justify-content: space-between;
+    font-family:'Montserrat Alternates', sans-serif;
+}
+.titulos{
+    display: flex;
+    flex-direction: row;
+    text-align:center;
+    justify-content: space-between;
+    color:#240601;
+    font-family:'Montserrat Alternates', sans-serif;
+    font-weight:bold;
+    font-size:2rem;
+    text-shadow: 1rem 1rem 1rem #2406018e;
+    margin: 0;
+}
+.divFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+}
+.titulos{
+    display: flex;
+    flex-direction: row;
+    color: #240601;
+    font-size: 2rem;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px #2406018e;
+}
+.seguinos ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.seguinos li{
+    margin: 0 1rem;
+}
+ul li{
+    list-style-type: none;
+    margin: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    align-items: center;
+} 
+
+/*css pages producto*/
+.galeria{
+    background-color:#02e6b117;
+}
+h2{
+    font-family:'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight:bold;
+    color: #02e6b0 ;
+    text-shadow: 0.1rem 0.1rem 1rem  #2406018e; 
+    padding: 4rem;
+    background-color: #fc5d0dca;
+    text-align: center;
+}
+.galeriaDescripcion{
+    height: 40%;
+    font-family:'Josefin Slab', serif;
+    font-size: 2rem;
+    font-weight: 100;
+    color:#240601;
+    text-shadow: 0.1rem .01rem 0.1rem  #2406018e;
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    justify-content: center;
+}
+.galeriaDescripcion div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bordesRedondeados{
+    border-radius: 50px;
+}
+
+/* css pages eventos */
+ .galeriaEventos{
+    background-color:#02e6b117;
+}
+h3{
+    font-family:'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight:bold;
+    color: #02e6b0 ;
+    text-shadow: 0.1rem 0.1rem 1rem  #2406018e; 
+    padding: 4rem;
+    background-color: #fc5d0dca;
+    text-align: center;
+}
+
+section div article p{
+    font-family:'Josefin Slab', serif;
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+    color:#240601;
+    text-shadow: 0.1rem 0.1rem 0.1rem #fc5d0d;
+}
+.imagenGaleriaEventos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 5rem;
+}
+.imagenGaleriaEventos img{
+    margin: 1rem;
+}
+
+/* css pages contacto */
+.galeriaContacto{
+    background-color:#02e6b117;
+}
+h4{
+    font-family:'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight:bold;
+    color: #02e6b0 ;
+    text-shadow: 0.1rem 0.1rem 1rem  #2406018e; 
+    padding: 4rem;
+    background-color: #fc5d0dca;
+    text-align: center;
+}
+.listaContacto{
+    font-weight: 100;
+    color:#240601;
+    padding: 5rem;
+    font-family:'Montserrat Alternates', sans-serif;
+    font-weight:bold;
+    font-size:2rem;
+    text-shadow: 1px 1px 1px #2406018e;
+}
+.divRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem;
+}
+.locacion{
+    margin: 2rem;
+}
+.maps{
+    margin: 2rem; 
+}
+
+/* media queries*/
+@media screen and (max-width: 768px){
+    .paginaInicio{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas:
+        "header header header"
+        "section section section"
+        "article article article"
+        "aside aside aside"
+        "footer footer footer";
+    }
+    .divHeader{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .navBar li{
+        margin: 2.5rem;      
+        width: 100%;
+    }  
+    .galeriaDescripcion{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        justify-content:center;
+    }
+    .bordesRedondeados{
+        margin: 1rem;
+    }
+    .imagenGaleriaEventos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .maps{
+        width: 500px; 
+        height: 400px;
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .paginaInicio{
+        display: grid;
+        height: 100vh;
+        width: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas:
+        "header"
+        "section"
+        "article"
+        "aside"
+        "footer";
+     }
+     .divHeader{
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+     }
+     .navBar{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;        
+     }
+     .navBar li{
+         width: 100%;
+         margin: 2.5rem;      
+     }
+     .galeriaDescripcion{
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         grid-template-rows: repeat(6, 1fr);
+         justify-items: center;
+         justify-content: center;
+     }
+     .imagenGaleriaEventos{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content:center;
+         padding: 2.5rem;       
+     }
+     .bordesRedondeados{
+         margin: 1rem;
+     }
+     .listaContacto{
+         display: flex;
+         flex-direction: column;
+         align-items:flex-start;
+         padding: 2rem;
+     }
+     .maps{
+         width: 400px; 
+         height: 300px;
+         overflow: scroll;
+     }
+ }
+ 
