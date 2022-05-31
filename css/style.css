@@ -42,7 +42,7 @@ familia tipográfica: 'Montserrat Alternates', sans-serif; */
 }
 .footer{
     grid-area: footer;
-    background-color: #240601;
+    background-color:aliceblue;
 }
 
 /*css del header*/
