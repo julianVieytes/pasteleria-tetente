@@ -25,7 +25,6 @@ familia tipográfica: 'Montserrat Alternates', sans-serif; */
 }
 .header{
     grid-area: header;
-    background-color:#02e6b117;
 }
 .section{
     grid-area: section;
