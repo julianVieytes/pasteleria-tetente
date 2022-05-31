@@ -33,15 +33,14 @@ familia tipográfica: 'Montserrat Alternates', sans-serif; */
 }
 .article{
     grid-area: article;
-    background-color:#02e6b117;
+    background-color:#02e6b130;
 }
 .aside{
     grid-area: aside;
-    background-color:#02e6b117;
+    background-color:#02e6b130;
 }
 .footer{
     grid-area: footer;
-    background-color: #240601;
 }
 
 /*css del header*/
@@ -68,10 +67,6 @@ a{
     text-shadow: 1px 1px 1px #2406018e;
     
 }
-a:hover{
-    color: #02e6b1;
-}
-
 /*ccs de section*/
 .section{
     width: 100%;
@@ -109,7 +104,6 @@ p{
 
 /*ccs del footer*/
 .footer{
-    background-color: #02e6b1;
     justify-content: space-between;
     font-family:'Montserrat Alternates', sans-serif;
 }
@@ -161,16 +155,18 @@ ul li{
 
 /*css pages producto*/
 .galeria{
-    background-color:#02e6b117;
+    background-color:#02e6b130;
 }
 h2{
+    width: 100%;
+    height: 12.5rem;
     font-family:'Raleway', sans-serif;
     font-size: 4rem;
     font-weight:bold;
     color: #02e6b0 ;
     text-shadow: 0.1rem 0.1rem 1rem  #2406018e; 
     padding: 4rem;
-    background-color: #fc5d0dca;
+    background-color:  #fc5d0d;
     text-align: center;
 }
 .galeriaDescripcion{
@@ -180,8 +176,8 @@ h2{
     font-weight: 100;
     color:#240601;
     text-shadow: 0.1rem .01rem 0.1rem  #2406018e;
-    margin: 1rem;
     padding: 1rem;
+    margin-top: 3rem ;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -199,19 +195,20 @@ h2{
 
 /* css pages eventos */
  .galeriaEventos{
-    background-color:#02e6b117;
+    background-color:#02e6b130;
 }
 h3{
+    width: 100%;
+    height: 12.5rem;
     font-family:'Raleway', sans-serif;
     font-size: 4rem;
     font-weight:bold;
     color: #02e6b0 ;
     text-shadow: 0.1rem 0.1rem 1rem  #2406018e; 
     padding: 4rem;
-    background-color: #fc5d0dca;
+    background-color:  #fc5d0d;
     text-align: center;
 }
-
 section div article p{
     font-family:'Josefin Slab', serif;
     font-size: 3rem;
@@ -233,16 +230,18 @@ section div article p{
 
 /* css pages contacto */
 .galeriaContacto{
-    background-color:#02e6b117;
+    background-color:#02e6b130;
 }
 h4{
+    width: 100%;
+    height: 12.5rem;
     font-family:'Raleway', sans-serif;
     font-size: 4rem;
     font-weight:bold;
     color: #02e6b0 ;
     text-shadow: 0.1rem 0.1rem 1rem  #2406018e; 
     padding: 4rem;
-    background-color: #fc5d0dca;
+    background-color:  #fc5d0d;
     text-align: center;
 }
 .listaContacto{
@@ -371,4 +370,58 @@ h4{
          overflow: scroll;
      }
  }
+
+/* gradientes, tranciciones y animaciones */
+/* gradientes */
+ .header{
+    background-image: linear-gradient(to top, #02e6b130,#fcae0669);
+}
+.footer{
+    background-image: linear-gradient(to bottom, #02e6b130,#fcae0669);
+}
+/* transformaciones */
+a:hover{
+    color: #02e6b1;
+    transform: scale(2);
+    transition: all 1s;
+}
+.IconosRedes:hover{
+    transform: scale(2);
+    transition: all 1s;
+}
+.imgUno:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.imgDos:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.imgTres:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.imgCuatro:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.imgCinco:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.imgSeis:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.imgSiete:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.imgOcho:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.animate__animated{
+    --animate-duration: 1.5s
+}
  
