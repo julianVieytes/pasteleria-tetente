@@ -266,6 +266,60 @@ h4{
     margin: 2rem; 
 }
 
+/* gradientes, tranciciones y animaciones */
+/* gradientes */
+ .header{
+    background-image: linear-gradient(to top, #02e6b130,#fcae0669);
+}
+.footer{
+    background-image: linear-gradient(to bottom, #02e6b130,#fcae0669);
+}
+/* transformaciones */
+a:hover{
+    color: #02e6b1;
+    transform: scale(2);
+    transition: all 1s;
+}
+.IconosRedes:hover{
+    transform: scale(2);
+    transition: all 1s;
+}
+.imgUno:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.imgDos:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.imgTres:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.imgCuatro:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.imgCinco:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.imgSeis:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.imgSiete:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.imgOcho:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.animate__animated{
+    --animate-duration: 1.5s
+}
+
 /* media queries*/
 @media screen and (max-width: 768px){
     .paginaInicio{
@@ -370,58 +424,3 @@ h4{
          overflow: scroll;
      }
  }
-
-/* gradientes, tranciciones y animaciones */
-/* gradientes */
- .header{
-    background-image: linear-gradient(to top, #02e6b130,#fcae0669);
-}
-.footer{
-    background-image: linear-gradient(to bottom, #02e6b130,#fcae0669);
-}
-/* transformaciones */
-a:hover{
-    color: #02e6b1;
-    transform: scale(2);
-    transition: all 1s;
-}
-.IconosRedes:hover{
-    transform: scale(2);
-    transition: all 1s;
-}
-.imgUno:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-}
-.imgDos:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-}
-.imgTres:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-}
-.imgCuatro:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-}
-.imgCinco:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-}
-.imgSeis:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-}
-.imgSiete:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-}
-.imgOcho:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-}
-.animate__animated{
-    --animate-duration: 1.5s
-}
- 
