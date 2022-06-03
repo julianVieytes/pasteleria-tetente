@@ -47,12 +47,21 @@ familia tipográfica: 'Montserrat Alternates', sans-serif; */
 .divHeader{
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 .navBar{
     display: flex;
     flex-direction: row;        
+}
+.centrado{
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 .navBar li{
     margin: 2.5rem;
